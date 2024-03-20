@@ -8,3 +8,6 @@ format:
 	black ./app
 test:
 	pytest --cov=app tests/
+
+test1:
+	ruff ./app
