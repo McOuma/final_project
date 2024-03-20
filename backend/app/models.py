@@ -47,19 +47,7 @@ class Caregiver(User):
     location = db.Column(db.String(), unique=True)
     certification = db.Column(db.String(), unique=True)
 
-    def __init__(
-        self,
-        username,
-        email_address,
-        password_hash,
-        created_on,
-        first_name,
-        last_name,
-        national_id,
-        phone_no,
-        location,
-        certification,
-    ):
+    def __init__(self,username,email_address,password_hash,created_on,first_name,last_name,national_id,phone_no,location,certification):
         super().__init__(username, email_address, password_hash, created_on)
         self.first_name = first_name
         self.last_name = last_name
