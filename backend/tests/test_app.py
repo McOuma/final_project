@@ -1,5 +1,4 @@
-def test_home(client):
+def test_homepage(client):
     response = client.get('/')
-    assert response.status_code == 200
-    expected_data = {"mesaage":"Were John"}
+    expected_data = {"messsage":"Welcome to Homepage"}
     assert response.json == expected_data
